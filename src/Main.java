@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1(); //variable Task 1 описание переменных
         task2(); //initializing variables Task 2 инициализация переменнных
+        task3(); //three teachers Task 3 три учителя
     }
     public static void task1() {
         System.out.println(" Задача 1");
@@ -37,4 +38,24 @@ public class Main {
         System.out.println(" Переменная Float i2 = " +i2);
 
     }
+    public static void task3() {
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 3 три учителя");
+        byte lyudmilaPavlovna = 23;
+        System.out.println(" Людмила ПАвловна = " +lyudmilaPavlovna+ " учеников");
+        byte annaSergeevna = 27;
+        System.out.println(" Анна Сергеевна = " +annaSergeevna+ " учеников");
+        byte ekaterinaAndreevna = 30;
+        System.out.println(" Екатерина Андреевна = " +ekaterinaAndreevna+ " учеников");
+        int totalStudents = lyudmilaPavlovna + annaSergeevna + ekaterinaAndreevna; // Почему INT значение 80 позволяет BYT??????
+        System.out.println(" Всего учеников = " +totalStudents+ " учеников");
+        short totalTaper = 480;
+        System.out.println(" Купили бумаги = " +totalTaper+ " листов");
+        int sheetsStudent = totalTaper / totalStudents ;
+        System.out.println(" Количество бумаги на одного ученика = " +sheetsStudent+ " листов");
+
+
+    }
+
+
 }
