@@ -4,7 +4,7 @@ public class Main {
         task2(); //initializing variables Task 2 инициализация переменнных
         task3(); //three teachers Task 3 три учителя
         task4(); //bottle cutting machine Task 4 станок для бутылок
-        task4(); //paint for school Task 5 краска для школы
+
     }
     public static void task1() {
         System.out.println(" Задача 1");
