@@ -3,6 +3,8 @@ public class Main {
         task1(); //variable Task 1 описание переменных
         task2(); //initializing variables Task 2 инициализация переменнных
         task3(); //three teachers Task 3 три учителя
+        task4(); //bottle cutting machine Task 4 станок для бутылок
+        task4(); //paint for school Task 5 краска для школы
     }
     public static void task1() {
         System.out.println(" Задача 1");
@@ -53,9 +55,21 @@ public class Main {
         System.out.println(" Купили бумаги = " +totalTaper+ " листов");
         int sheetsStudent = totalTaper / totalStudents ;
         System.out.println(" Количество бумаги на одного ученика = " +sheetsStudent+ " листов");
-
+    }
+    public static void task4() {
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 4 станок бутылок");
+        byte machinePerformance = 16/2;
+        System.out.println(" Производительность станка = " +machinePerformance+ " шт/мин");
+        int machinePerformanceTwentyMinutes = machinePerformance*20;
+        System.out.println(" За 20 минут станок произвел = " +machinePerformanceTwentyMinutes+ " шт");
+        int machineProductivityOneDay = machinePerformance*60*24;
+        System.out.println(" За сутки станок произвел = " +machineProductivityOneDay+ " шт");
+        int machinePerformanceThreeDays = machineProductivityOneDay*3;
+        System.out.println(" За три дня станок произвел = " +machinePerformanceThreeDays+ " шт");
+        int machineProductivityPerMonth = machineProductivityOneDay*30;
+        System.out.println( " За месяц станок произвел = " +machineProductivityPerMonth+ " шт");
 
     }
-
 
 }
