@@ -4,9 +4,8 @@ public class Main {
         task2(); //initializing variables Task 2 инициализация переменнных
         task3(); //three teachers Task 3 три учителя
         task4(); //bottle cutting machine Task 4 станок для бутылок
-        task5(); //paint for school Task 4 краска для школы
-
-
+        task5(); //paint for school Task 5 краска для школы
+        task6(); //Breakfast of the champion Task 6 завтрак чемпиона
     }
     public static void task1() {
         System.out.println(" Задача 1");
@@ -75,7 +74,7 @@ public class Main {
     }
     public static void task5() {
         System.out.println("___________________________________________________________________");
-        System.out.println(" Задача 4 краска для школы");
+        System.out.println(" Задача 5 краска для школы");
         byte totalPaint = 120;
         System.out.println(" Всего краски = " +totalPaint+ " банок");
         byte  paintsOneClass= 2+4;// Proportion 2 of white 4 to brown
@@ -88,8 +87,41 @@ public class Main {
         System.out.println(" Общее количество белой краски  = " +amountBrownPaint+ " банок");
         System.out.println(" В школе,где " +numberСlasses+ " , классов нужно " +amountWhitePaint+ " банок белой краски и " +amountBrownPaint+ " банок коричневой краски.");
 
-
-
+    }
+    public static void task6() {
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 6 завтрак чемпиона");
+        byte numberBananas = 5;
+        System.out.println(" Количество бананов  " +numberBananas+ " штук");
+        byte weightOneBanana = 80;
+        System.out.println(" Масса одного банана  " +weightOneBanana+ " гр.");
+        double totalWeightBanana = numberBananas*weightOneBanana;
+        double totalWeightBananakg = numberBananas*weightOneBanana*0.001;
+        System.out.println(" Масса бананов  " +totalWeightBanana+ " гр. " +totalWeightBananakg+ " кг." );
+        int amountMilk = 200;
+        System.out.println(" Количество молока  " +amountMilk+ " мл.");
+        int oneHundredMlMilk = 105;
+        System.out.println(" Масса 100 милилитров молока  " +oneHundredMlMilk+ " гр.");
+        float totalMilkWeight = amountMilk*oneHundredMlMilk*0.01F;
+        float totalMilkWeightkg = amountMilk*oneHundredMlMilk*0.00001F;
+        System.out.println(" Масса молока  " +totalMilkWeight+ " гр. " +totalMilkWeightkg+ " кг." );
+        int iceСreaSundae = 2;
+        System.out.println(" Количество упаковок мороженного  " +iceСreaSundae+ " брикета.");
+        int iceСreamWeight = 100;
+        System.out.println(" Масса одной упаковки мороженного  " +iceСreamWeight+ " гр.");
+        int totaliceСreamWeight = iceСreaSundae*iceСreamWeight;
+        float totaliceСreamWeightkg = iceСreaSundae*iceСreamWeight*0.001F;
+        System.out.println(" Масса мороженого  " +totaliceСreamWeight+ " гр. " +totaliceСreamWeightkg+ " кг." );
+        byte numberEggs = 4;
+        System.out.println(" Количество яиц  " +numberEggs+ " штуки");
+        byte weightOneEggs = 70;
+        System.out.println(" Масса одного яйца  " +weightOneEggs+ " гр.");
+        double totalWeightEggs = numberEggs*weightOneEggs;
+        double totalWeightEggskg = numberEggs*weightOneEggs*0.001;
+        System.out.println(" Масса бананов  " +totalWeightEggs+ " гр. " +totalWeightEggskg+ " кг." );
+        double totalBreakfast = totalWeightBanana+totalMilkWeight+totaliceСreamWeight+totalWeightEggs;
+        double totalBreakfastkg = (totalWeightBanana+totalMilkWeight+totaliceСreamWeight+totalWeightEggs)*0.001;
+        System.out.println(" общая масса завтрака  " +totalBreakfast+ " гр. " +totalBreakfastkg+ " кг." );
 
     }
 
