@@ -6,6 +6,7 @@ public class Main {
         task4(); //bottle cutting machine Task 4 станок для бутылок
         task5(); //paint for school Task 5 краска для школы
         task6(); //Breakfast of the champion Task 6 завтрак чемпиона
+        task7(); //Diet Program Task 7 программа диеты
     }
     public static void task1() {
         System.out.println(" Задача 1");
@@ -122,6 +123,23 @@ public class Main {
         double totalBreakfast = totalWeightBanana+totalMilkWeight+totaliceСreamWeight+totalWeightEggs;
         double totalBreakfastkg = (totalWeightBanana+totalMilkWeight+totaliceСreamWeight+totalWeightEggs)*0.001;
         System.out.println(" общая масса завтрака  " +totalBreakfast+ " гр. " +totalBreakfastkg+ " кг." );
+
+    }
+    public static void task7() {
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 7 программа диеты");
+        int excessMasskg = 7;
+        int excessMass = 7*1000;
+        System.out.println(" Исбыток массы спортсмена на  " +excessMasskg+ " кг." +excessMass+ " гр.");
+        int dietReductionQuarter = 7000/250;
+        System.out.println(" Количество дней при потере массы 250 гр/день  " +dietReductionQuarter+ " дней.");
+        int dietReductionalf = 7000/500;
+        System.out.println(" Количество дней при потере массы 500 гр/день  " +dietReductionalf+ " дней.");
+        int dietAverageReduction = 7000/((500+250)/2);
+        System.out.println(" Количество дней при средней вычесленной потере массы 750 гр/день  " +dietAverageReduction+ " дней.");
+
+
+
 
     }
 
