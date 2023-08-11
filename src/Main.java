@@ -173,8 +173,5 @@ public class Main {
         float diffKristinaMonth=paymentKristinaInd-paymentKristina;
         float diffKristinaYear=paymentKristinaIndYear-paymentKristinaYear;
         System.out.println(" Разница в оплате Кристина в месяц = " +diffKristinaMonth+ " руб/мес. Разница в оплате за год " +diffKristinaYear+" руб/год.");
-
-
-
     }
         }
