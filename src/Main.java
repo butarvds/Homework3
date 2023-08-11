@@ -6,6 +6,8 @@ public class Main {
         task4(); //bottle cutting machine Task 4 станок для бутылок
         task5(); //paint for school Task 5 краска для школы
         task6(); //Breakfast of the champion Task 6 завтрак чемпиона
+        task7(); //Diet Program Task 7 программа диеты
+        task8(); //Staff motivation Task 8 мотивация персонама
     }
     public static void task1() {
         System.out.println(" Задача 1");
@@ -124,6 +126,55 @@ public class Main {
         System.out.println(" общая масса завтрака  " +totalBreakfast+ " гр. " +totalBreakfastkg+ " кг." );
 
     }
+    public static void task7() {
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 7 программа диеты");
+        int excessMasskg = 7;
+        int excessMass = 7*1000;
+        System.out.println(" Исбыток массы спортсмена на  " +excessMasskg+ " кг." +excessMass+ " гр.");
+        int dietReductionQuarter = 7000/250;
+        System.out.println(" Количество дней при потере массы 250 гр/день  " +dietReductionQuarter+ " дней.");
+        int dietReductionalf = 7000/500;
+        System.out.println(" Количество дней при потере массы 500 гр/день  " +dietReductionalf+ " дней.");
+        int dietAverageReduction = 7000/((500+250)/2);
+        System.out.println(" Количество дней при средней вычесленной потере массы 750 гр/день  " +dietAverageReduction+ " дней.");
+
+    }
+    public static void task8() {
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 8 мотивация сотрудников");
+        int paymentMarina = 67760;
+        int paymentMarinaYear = 67760*11;
+        System.out.println(" Оплата Марина в месяц = " +paymentMarina+ " руб/мес. Доход за год " +paymentMarinaYear+ " руб/год." );
+        int paymentDenis = 83690;
+        int paymentDenisYear = 83690*11;
+        System.out.println(" Оплата Дениса в месяц = " +paymentDenis+ " руб/мес. Доход за год " +paymentDenisYear+ " руб/год.");
+        int paymentKristina = 76230;
+        int paymentKristinaYear = 76230*11;
+        System.out.println(" Оплата Кристина в месяц = " +paymentKristina+ " руб/мес. Доход за год " +paymentKristinaYear+ " руб/год." );
+        //Indexing employee pay
+        float idexVariable= 1.1F;
+        float paymentMarinaInd= paymentMarina*idexVariable;
+        float paymentMarinaIndYear= paymentMarina*idexVariable*11;
+        System.out.println(" Оплата после индексации Марина в месяц = " +paymentMarinaInd+ " руб/мес. Доход за год с учетом индексации " +paymentMarinaIndYear+" руб/год.");
+        float paymentDenisInd= paymentDenis*idexVariable;
+        float paymentDenisIndYear= paymentDenis*idexVariable*11;
+        System.out.println(" Оплата после индексации Дениса в месяц = " +paymentDenisInd+ " руб/мес. Доход за год с учетом индексации " +paymentDenisIndYear+" руб/год.");
+        float paymentKristinaInd= paymentKristina*idexVariable;
+        float paymentKristinaIndYear= paymentKristina*idexVariable*11;
+        System.out.println(" Оплата после индексации Кристина в месяц = " +paymentKristinaInd+ " руб/мес. Доход за год с учетом индексации " +paymentKristinaIndYear+" руб/год.");
+        //The difference in annual income before and after indexing
+        float diffMarinaMonth=paymentMarinaInd-paymentMarina;
+        float diffMarinaYear=paymentMarinaIndYear-paymentMarinaYear;
+        System.out.println(" Разница в оплате Марина в месяц = " +diffMarinaMonth+ " руб/мес. Разница в оплате за год " +diffMarinaYear+" руб/год.");
+        float diffDenisMonth=paymentDenisInd-paymentDenis;
+        float diffDenisYear=paymentDenisIndYear-paymentDenisYear;
+        System.out.println(" Разница в оплате Дениса в месяц = " +diffDenisMonth+ " руб/мес. Разница в оплате за год " +diffDenisYear+" руб/год.");
+        float diffKristinaMonth=paymentKristinaInd-paymentKristina;
+        float diffKristinaYear=paymentKristinaIndYear-paymentKristinaYear;
+        System.out.println(" Разница в оплате Кристина в месяц = " +diffKristinaMonth+ " руб/мес. Разница в оплате за год " +diffKristinaYear+" руб/год.");
 
 
-}
+
+    }
+        }
